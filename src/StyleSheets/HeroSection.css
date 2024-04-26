@@ -1,0 +1,218 @@
+.heroSectionWrapper,
+.animatedText {
+    background-color: #FFF4DF;
+}
+
+.heroSectionWrapper {
+    padding: 2rem 10rem;
+}
+
+.heroSection {
+    padding: 2.5rem 5rem;
+}
+
+.lineText {
+    padding: 0px 15px 0px 0px;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 2px;
+}
+
+.LineAnimation,
+.animationContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Line Styling */
+.animationContainer {
+    width: 67rem;
+    position: relative;
+}
+
+.animatedText {
+    position: absolute;
+    right: 0;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.LineAnimation {
+    justify-content: left;
+    margin: 25px 0px;
+}
+
+.emptyContainer {
+    width: 9em;
+    height: 4em;
+    right: -9em;
+}
+
+.lineImages {
+    height: 4em;
+    width: 20em;
+    object-fit: cover;
+}
+
+.lineImagesFirst {
+    width: 17em;
+}
+
+/* Line 2 Styling */
+.lineSecondImage {
+    width: 100%;
+    height: 4em;
+    object-position: bottom;
+}
+
+.overFlowed {
+    overflow: hidden;
+}
+
+
+
+/* Line Animation */
+.animate {
+    animation: moveLeftAndBack 4s ease-in-out infinite;
+}
+
+@keyframes moveLeftAndBack {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-7rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animated {
+    animation: moveLeftAndBackContainer 5s ease-in-out infinite;
+}
+
+@keyframes moveLeftAndBackContainer {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-7rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.animatedText.delayed {
+    animation-delay: 2.5s;
+}
+
+
+/* Line 3 Styling */
+.lineThirdImage {
+    height: 4.5em;
+    width: 27em;
+    object-fit: none;
+    object-position: 100% 31%;
+}
+
+.thirdAbsoluteDiv {
+    left: -5.5em;
+}
+
+.thirdImageWrapper {
+    width: 40%;
+    height: 4.5em;
+}
+
+.positionWrapper {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.animatedd {
+    animation: moveRightAndBackContainer 3s ease-in-out infinite;
+}
+
+@keyframes moveRightAndBackContainer {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(9rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.zeroPadding {
+    padding: 0;
+}
+
+.lineThirdImagee {
+    object-fit: none;
+    object-position: 36% 39%;
+    width: 100%;
+    margin: 0px 14px;
+}
+
+
+/* Line 4 Styling */
+.overFlowedImage {
+    width: 20em;
+}
+
+.lineFourthImage {
+    width: 13em;
+    object-fit: none;
+    object-position: 35% 19%;
+    height: 4.5em;
+}
+
+.lineFourthImagee {
+    object-fit: none;
+    object-position: 52% 87%;
+    width: 8.5em;
+    height: 4.5em;
+    margin: 0px 20px;
+}
+
+.FourthImageWrapper {
+    height: 4.5em;
+}
+
+.fourthAbsoluteDiv {
+    width: 52.5em;
+}
+
+.animateddd {
+    animation: moveRightBackContainer 3s ease-in-out infinite;
+}
+
+@keyframes moveRightBackContainer {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(9rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
