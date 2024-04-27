@@ -1,50 +1,65 @@
+.AstrixContextWrappper {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    position: relative;
+}
+
 .AstrixSectionWrapper {
     background-color: #15181B;
-    padding: 2em 2em;
-    height: 43em;
+    padding: 0.7em 2em 4em;
     position: relative;
     overflow: hidden;
 }
 
+/* .darkHeader img {
+    width: 10em;
+} */
 
 .astrixBig,
 .contextBig {
     font-size: 8rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #444649;
     line-height: 0.8em;
 }
 
-.btmar {
-    margin-bottom: 0.9em;
+.tpmar {
+    margin-top: 0.9em;
 }
 
+
 .SectionContextTitle {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 35em;
+    margin-top: 3em;
+    overflow: hidden;
 }
 
 .AstrixSectionLeft {
-    padding: 2em 0em;
+    padding: 0.5em 0em;
+    width: 64%;
+    overflow: hidden;
 }
-
 
 
 
 /* Purple Strip Styling */
 .purpleStrip {
+    z-index: 10;
     position: absolute;
     background-color: #B9A0FF;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4.5em;
+    width: calc(100% - 4em);
     width: 92em;
     transform: translate(-50%, -50%) rotate(90deg);
-    left: 10%;
-    top: 94%;
+    right: -17%;
+    top: 65%;
     transform-origin: center;
     animation: animatedPurpleStrip 9s ease-in-out infinite;
 }
@@ -55,7 +70,7 @@
     }
 
     50% {
-        transform: translateY(-42em) rotate(90deg);
+        transform: translateY(-25em) rotate(90deg);
     }
 
     100% {
@@ -65,10 +80,284 @@
 
 .purpleStripText {
     font-family: "Krona One", sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 .StarSymbol {
     margin: 0px 20px;
+}
+
+
+/* Right Section Styling */
+.contextDetailWrapper {
+    width: 27em;
+    padding-top: 1em;
+}
+
+.contextHeading {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.Context {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+.ContextBelowText {
+    font-size: 1.75em;
+}
+
+/* toggle switch button */
+
+.toggleButtonAbs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.toggleButton {
+    width: 17.5em;
+    background-color: #282B30;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2em;
+}
+
+.toggleSwitch {
+    padding: 15px 25px;
+    font-size: 1.15em;
+    font-weight: 400;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.shadow {
+    background-color: #484E56;
+    position: absolute;
+    width: 6.5em;
+    height: 3.3em;
+    border-radius: 2em;
+    bottom: 0;
+    z-index: 1;
+    transition: 1s ease;
+}
+
+
+
+/* Event Styling */
+.ContextBelowWrapper,
+.venue,
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.ContextBelowWrapper {
+    margin-bottom: 0.8em;
+}
+
+.time img,
+.venue img {
+    margin-right: 6px;
+}
+
+.Context {
+    margin-bottom: 0.3em;
+}
+
+.marrt {
+    margin-right: 30px;
+}
+
+.ContextDescription {
+    width: 70%;
+    font-size: 1em;
+}
+
+.smallImage {
+    width: 8em;
+}
+
+.bigImage {
+    position: absolute;
+    left: 28%;
+}
+
+.eventArtists {
+    width: 100%;
+}
+
+.ArtistImages {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Collection Styling */
+.ContextFooter {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.peopleText {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.peopleMar {
+    margin-bottom: 3.5em;
+}
+
+.lineh {
+    line-height: 60px;
+}
+
+.peopleImages {
+    position: relative;
+    width: 10em;
+    height: 2.5em;
+}
+
+.peopleImages img {
+    position: absolute;
+}
+
+.image1 {
+    left: 0;
+}
+
+.image2 {
+    left: 25px;
+}
+
+.image3 {
+    left: 50px;
+}
+
+.image4 {
+    left: 75px;
+}
+
+.image5 {
+    left: 100px;
+}
+
+.textAdj {
+    font-size: 1.375em;
+}
+
+/* Right Footer */
+.joinWaitingList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 27em;
+}
+
+.join {
+    background-color: #FFCA5F;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.4em 1.6em;
+    border-radius: 2em;
+    border: none;
+    height: 2.2em;
+    cursor: pointer;
+}
+
+.justify {
+    justify-content: end;
+}
+
+.ContextDetailHead {
+    margin-bottom: 14em;
+}
+
+/* Card Styling */
+.cards {
+    margin-top: 3em;
+    margin-bottom: 9em;
+}
+
+.cardCollection {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-column-gap: 12px;
+    margin-top: 1.5em;
+}
+
+.card {
+    background-color: #B9A0FF;
+    border-radius: 8.9px;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CardDate {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.42em;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.byPeople {
+    font-size: 0.49em;
+    color: #000000;
+}
+
+.byPeople span {
+    font-weight: bold;
+}
+
+.cardCollectionName {
+    font-size: 0.7em;
+}
+
+.cardContent {
+    margin-top: 10px;
+}
+
+.cardCollectionName {
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+
+/* Slider Images Styling */
+.imageOverFlowWrapper {
+    position: absolute;
+    left: 5em;
+}
+
+.imageSlider {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    transform: translateX(10em);
 }

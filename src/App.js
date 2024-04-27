@@ -5,7 +5,7 @@ import AstrixSection from './Components/AstrixSection'
 function App() {
   return (
     <div className="App">
-      {/* <HeroSection /> */}
+      <HeroSection />
       <AstrixSection />
     </div>
   );
