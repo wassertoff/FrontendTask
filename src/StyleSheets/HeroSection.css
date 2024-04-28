@@ -126,7 +126,7 @@
 }
 
 .thirdAbsoluteDiv {
-    left: -5.5em;
+    left: -4em;
 }
 
 .thirdImageWrapper {
@@ -177,7 +177,7 @@
 }
 
 .lineFourthImage {
-    width: 13em;
+    width: 15em;
     object-fit: none;
     object-position: 35% 19%;
     height: 4.5em;
@@ -197,6 +197,7 @@
 
 .fourthAbsoluteDiv {
     width: 52.5em;
+    left: -8em;
 }
 
 .animateddd {
@@ -209,7 +210,7 @@
     }
 
     50% {
-        transform: translateX(9rem);
+        transform: translateX(6em);
     }
 
     100% {

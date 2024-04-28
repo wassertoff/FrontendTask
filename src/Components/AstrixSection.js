@@ -24,8 +24,6 @@ import SliderCollectImage03 from '../Assets/AstrixPage/AstrixPageCollections/Sli
 import SliderCollectImage04 from '../Assets/AstrixPage/AstrixPageCollections/Slider/Frame 1261154673.png'
 
 
-
-
 export default function AstrixSection() {
     const [eventActive, updateEventActive] = useState(true);
 

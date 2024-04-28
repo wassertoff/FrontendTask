@@ -59,7 +59,7 @@
     width: 92em;
     transform: translate(-50%, -50%) rotate(90deg);
     right: -17%;
-    top: 65%;
+    top: 81%;
     transform-origin: center;
     animation: animatedPurpleStrip 9s ease-in-out infinite;
 }
@@ -70,7 +70,7 @@
     }
 
     50% {
-        transform: translateY(-25em) rotate(90deg);
+        transform: translateY(-34em) rotate(90deg);
     }
 
     100% {
